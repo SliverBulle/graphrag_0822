@@ -86,3 +86,7 @@ class LLMParameters(BaseModel):
         default=defs.LLM_CONCURRENT_REQUESTS,
     )
 
+    dimensions: int | None = Field(
+        description="The dimensions of the embedding vectors.", default=None
+    )
+
